@@ -1,0 +1,13 @@
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\News System.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\News System.pdb
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\obj\Debug\News System.csprojResolveAssemblyReference.cache
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\obj\Debug\News System.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\obj\Debug\News System.pdb
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\Newtonsoft.Json.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Net.Http.Formatting.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Web.Http.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Web.Http.WebHost.dll
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\Newtonsoft.Json.xml
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Net.Http.Formatting.xml
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Web.Http.xml
+C:\Users\martin\Documents\Visual Studio 2012\Projects\ASP\ASP WebForms Task - News System\News System\bin\System.Web.Http.WebHost.xml

@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="News_System.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>News System</title>
+    <link href="Styles/Styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <h1>News System</h1>
+    </header>
+
+    <form id="form1" runat="server">
+        <nav>
+            <asp:LinkButton runat="server" ID="homeLink" PostBackUrl="~/Pages/Default.aspx">Home</asp:LinkButton>
+            <asp:LinkButton runat="server" ID="articles" OnClick="articles_Click">Articles</asp:LinkButton>
+            <asp:LinkButton runat="server" ID="categories" OnClick="categories_Click">Categories</asp:LinkButton>
+        </nav>
+
+        <div>
+            Current User:
+        <asp:Label CssClass="currentUser" ID="literalCurrentUser" runat="server" ></asp:Label>
+            <asp:LinkButton ID="literalLogOut" Text="LogOut" runat="server" OnClick="literalLogOut_Click"></asp:LinkButton>
+        </div>
+        <span id="loginRegisterPanel" runat="server">
+            <asp:LinkButton runat="server" ID="linkbuttonRegister" OnClick="linkbuttonRegister_Click">Register</asp:LinkButton>
+            <asp:LinkButton runat="server" ID="linkbuttonLogin" OnClick="linkbuttonLogin_Click">Login</asp:LinkButton>
+            <asp:CheckBox runat="server" ID="rememberMe" Text="Remember me"></asp:CheckBox>
+            <asp:TextBox ID="textboxUserName" runat="server"></asp:TextBox>
+            <asp:TextBox ID="textboxPassword" runat="server"></asp:TextBox>
+            <asp:Literal ID="labelMgs" runat="server"></asp:Literal>
+        </span>
+        <div>
+            <asp:ContentPlaceHolder ID="SiteSubtutle" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <h5>Footer Content</h5>
+    </footer>
+</body>
+</html>

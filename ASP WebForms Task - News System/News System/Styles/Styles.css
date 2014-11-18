@@ -1,0 +1,65 @@
+﻿body {
+}
+
+.details {
+    color: green;
+    padding: 5px;
+}
+
+.likePost {
+    color: blue;
+}
+
+span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+tr td {
+    width: 15%;
+    text-align: center;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #eee;
+}
+
+.currentUser {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+}
+
+.article h3 {
+    color: green;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #eee;
+    padding: 5px;
+}
+
+#Categories {
+    text-align: right;
+    width: 150px;
+    float: right;
+    padding: 5px;
+}
+
+    #Categories h4 {
+        color: #4242f2;
+        margin-bottom: 0;
+        margin-top: 2px;
+        text-decoration:underline;
+    }
+
+    #Categories div {
+        color: #4242f2;
+    }
+
+    #Categories span {
+        color: green;
+    }

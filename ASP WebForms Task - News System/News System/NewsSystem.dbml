@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MRT_NewsSystem" Class="NewsSystemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=SRV-APP-11;Initial Catalog=MRT_NewsSystem;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MRT_NewsSystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Article" Member="Articles" Storage="_Article1s" ThisKey="UserID" OtherKey="AuthorID" Type="Article" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categories" Member="Categories">
+    <Type Name="Category">
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Category_Article" Member="Articles" Storage="_Article1s" ThisKey="CategoryID" OtherKey="CategoryID" Type="Article" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Likes" Member="Likes">
+    <Type Name="Like">
+      <Column Name="LikeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Like_Article" Member="Articles" Storage="_Article1s" ThisKey="LikeID" OtherKey="LikeID" Type="Article" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Article" Member="Articles">
+    <Type Name="Article">
+      <Column Name="ArticleID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AuthorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LikeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Category_Article" Member="Category" ThisKey="CategoryID" OtherKey="CategoryID" Type="Category" IsForeignKey="true" />
+      <Association Name="Like_Article" Member="Like" ThisKey="LikeID" OtherKey="LikeID" Type="Like" IsForeignKey="true" />
+      <Association Name="User_Article" Member="User" ThisKey="AuthorID" OtherKey="UserID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
